@@ -53,7 +53,7 @@ header {
 }
 
 .nav-button {
-    background-color: #858A9F;
+    background-color: #e7e7e7;
     border-radius: 50px;
     border: 3px solid#fff;
     color:#fff;
@@ -97,7 +97,7 @@ header {
 .dinner:hover,
 .dinner:focus {
     /* background-color: #858A9F */
-    background-color: darkblue;
+    background-color: #034f84;
 }
 
 .nav-button:hover,
@@ -123,7 +123,7 @@ header {
 }
 
 .featured-title {
-    font-size: 2rem;
+    font-size: 2.3rem;
     font-family: 'Bebas Neue', cursive;
 }
 
@@ -136,6 +136,10 @@ header {
 .instructions-container {
     margin-left: 10px;
 
+}
+
+.featured-ingredients {
+    font-size: 1.8rem;
 }
 
 .meal-options {
