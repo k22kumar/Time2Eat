@@ -123,6 +123,7 @@ header {
 }
 
 .featured-title {
+    margin: 0;
     font-size: 2.3rem;
     font-family: 'Bebas Neue', cursive;
 }
@@ -139,7 +140,7 @@ header {
 }
 
 .featured-ingredients {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
 }
 
 .meal-options {
@@ -189,7 +190,7 @@ header {
 }
 
 .card-image {
-    margin: 0 auto;
+    margin: auto auto;
     display: block;
     width: 100%;
     height: 100%;
