@@ -84,22 +84,6 @@ header {
     margin: 0 auto;
 }
 
-.breakfast:hover,
-.breakfast:focus {
-    background-color: #ff7b25
-}
-
-.lunch:hover,
-.lunch:focus {
-    background-color: #405d27
-}
-
-.dinner:hover,
-.dinner:focus {
-    /* background-color: #858A9F */
-    background-color: #034f84;
-}
-
 .nav-button:hover,
 .nav-button:focus {
     background-color: black
