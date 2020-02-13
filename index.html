@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time2Eat</title>
+    <!-- GOOGLE FONT FOR LOGO -->
+    <link href="https://fonts.googleapis.com/css?family=Sriracha&display=swap" rel="stylesheet">
+    <!-- GOOGLE FONT FOR REST OF DOCUMENT -->
+    <link href="https://fonts.googleapis.com/css?family=Red+Hat+Text|Sriracha&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <h1 class="logo">Time2Eat</h1>
+                <button class="nav-button breakfast">Breakfast</button>
+                <button class="nav-button lunch" >Lunch</button>
+                <button class="nav-button dinner">Dinner</button>
+                <button class="nav-button snacks">Snacks</button>
+                <button class="nav-button login">Login</button>
+                <button class="nav-button join">Join</button>
+            </div>
+        </nav>
+        <div class="featured-container wrapper">
+            <div class="featured-meal-container">
+                <div class="featured-image">
+                    <img src="" alt="">
+                </div>
+            </div>
+            <div class="instructions-container">
+                <h1 class="featured-title"></h1>
+                <div class="featured-ingredients">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <form action="#">
+            <div class="search-bar">
+                <input type="text" placeholder="What are you craving?" id="search-input">
+                <input type="submit" class="nav-button" value="search">
+            </div>
+        </form>
+        <div class="meal-options">
+            <h3>More Breakfast Ideas</h3>
+        </div>
+    </header>
+
+    <img src="" alt="">
+
+    <main class="wrapper">
+        <div class="recipes-container">
+            <!-- dynamically insert recipes here -->
+        </div>
+    </main>
+
+    
+    <footer>
+        <p>
+            data courtesy of the
+            <a href="https://developer.edamam.com/edamam-docs-recipe-api">EDAMAM API</a>
+          </p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

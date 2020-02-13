@@ -1,0 +1,225 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+/* generic styles */
+p {
+    margin: 0;
+    padding: 0;
+}
+
+html,button {
+    font-family: 'Red Hat Text', sans-serif;
+    
+}
+/* navigation styles */
+
+nav {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-container {
+    text-align: center;
+}
+
+.logo, form {
+    display: inline-block;
+	color: black;
+	text-align: center;
+}
+
+.logo {
+    font-family: 'Sriracha', cursive;
+    margin-left: auto;
+    font-size: 3.5rem;
+}
+
+.login {
+    margin-left: auto;
+}
+
+.nav-button {
+    background-color: #858A9F;
+    border-radius: 50px;
+    border: 3px solid#fff;
+    color:#fff;
+    overflow: hidden;
+    padding: 15px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.breakfast {
+    background-color: #FFE57E;
+}
+
+.lunch {
+    background-color: #b5e7a0;
+}
+
+.dinner {
+    background-color: #858A9F;
+}
+
+
+
+.breakfast:hover,
+.breakfast:focus {
+    background-color: #ff7b25
+}
+
+.lunch:hover,
+.lunch:focus {
+    background-color: #405d27
+}
+
+.dinner:hover,
+.dinner:focus {
+    /* background-color: #858A9F */
+    background-color: darkblue;
+}
+
+.nav-button:hover,
+.nav-button:focus {
+    background-color: black
+}
+
+
+/* header content */
+
+.featured-container {
+    height: 80 vh;
+    background-color: #FFE57E;
+    padding: 20px;
+    display: flex;
+    border-radius: 17px;
+}
+
+.featured-image {
+    margin: 0 auto;
+    border-radius: 17px;
+    overflow: hidden;
+}
+
+.featured-title {
+    font-size: 2rem;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.featured-meal-container, .instructions-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.instructions-container {
+    margin-left: 10px;
+
+}
+
+.meal-options {
+    text-align: center;
+}
+
+/* wrapper */
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/* recipe card classes */
+
+.recipes-container {
+ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 10px;
+}
+
+/* BREAKFAST COLOR: #FFE57E */
+
+/* EVENING OLCOR: 717999 OR  I THIN THIS ONE BETTER(858A9F) */
+
+.recipe-card {
+    border-radius: 17px;
+    width: 280px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    margin: 17px;
+   
+}
+
+.card-image-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    color: white;
+    background-color: black;
+}
+
+.card-image {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: 0.85;
+}
+
+.card-overlay {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+    top: 0;
+}
+
+.card-overlay-title {
+    font-family: 'Bebas Neue', cursive;
+    position: absolute;
+    font-size: 2rem;
+    font-weight: 600;
+    top: 8px;
+  left: 16px;
+  font-weight: 500;
+  color: white;
+}
+
+
+.card-description {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-iconbar {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-text {
+ padding-bottom: 10px;
+}
