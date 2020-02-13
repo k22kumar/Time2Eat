@@ -79,7 +79,10 @@ header {
     background-color: #858A9F;
 }
 
-
+.search-bar {
+    width: 60%;
+    margin: 0 auto;
+}
 
 .breakfast:hover,
 .breakfast:focus {
