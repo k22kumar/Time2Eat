@@ -22,16 +22,20 @@ recipeApp.chooseMealType = function () {
     this.$btn.on('click', function () {
         console.log($(this))
         if ($(this).is('.breakfast')) {
-            recipeApp.getRecipes(`Breakfast`);
+            recipeApp.getRecipes(`breakfast`);
+            recipeApp.updateBackground(`#FFE57E`);
         }
         if ($(this).is('.lunch')) {
-            recipeApp.getRecipes(`Lunch`);
+            recipeApp.getRecipes(`lunch`);
+            recipeApp.updateBackground(`#b5e7a0`);
         }
         if ($(this).is('.dinner')) {
-            recipeApp.getRecipes(`Dinner`);
+            recipeApp.getRecipes(`dinner`);
+            recipeApp.updateBackground("#858A9F");
         }
         if ($(this).is('.snacks')) {
-            recipeApp.getRecipes(`Dinner`);
+            recipeApp.getRecipes(`snacks`);
+            recipeApp.updateBackground(`#e06377`);
         }
     })
 }
@@ -112,6 +116,13 @@ recipeApp.concatArray = function (array) {
         string += ` ${element}`;
     })
     return string;
+}
+
+//this function changes the color of the background color depending on what is searched
+recipeApp.updateBackground =function (bgc) {
+    let color = bgc;
+    console.log(color);
+$('featured-background').css('background-color', 'color');
 }
 
 $(document).ready(function () {
