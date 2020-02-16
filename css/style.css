@@ -476,7 +476,7 @@ main {
     }
 }
 
-@media (orientation : landscape) {
+@media (max-width: 600px) and (orientation : landscape) {
     
     .instructions-container {
         width: 100%;
