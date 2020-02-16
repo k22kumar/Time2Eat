@@ -33,8 +33,9 @@ header {
     flex-direction: column;
 }
 
+
 .nav-container {
-    margin: 20px 0;
+    margin: 10px 0;
     display: flex;
     align-items: center;
     text-align: center;
@@ -46,6 +47,8 @@ header {
 	text-align: center;
 }
 
+
+
 .logo {
     margin: 0 20px 0 0;
     font-family: 'Sriracha', cursive;
@@ -54,6 +57,7 @@ header {
 
 .login {
     margin-left: auto;
+    min-width: 110px;
 }
 
 .nav-button {
@@ -71,6 +75,12 @@ header {
     outline: none;
     transition: all 0.3s;
     height: 50px;
+}
+
+.search-button {
+background-color: #ffb732;
+width: 130px;
+min-width: 100px;
 }
 
 .breakfast {
@@ -116,11 +126,10 @@ height: 60vh;
 
 .featured-container {
     height: 100%;
-    
-    padding: 20px;
+    padding: 10px;
     display: flex;
-    border-radius: 17px;
     align-items: center;
+    justify-content: center;
 }
 
 .featured-image {
@@ -138,7 +147,6 @@ height: 60vh;
 }
 
 .featured-meal-container, .instructions-container {
-    width: 50%;
     display: flex;
     flex-direction: column;
 }
@@ -149,8 +157,8 @@ height: 60vh;
 
 .instructions-container {
     margin-left: 10px;
-    overflow: auto;
     height: 95%;
+    width: 50%;
 }
 
 .featured-ingredients {
@@ -161,6 +169,11 @@ height: 60vh;
     margin: 10px auto;
 }
 
+main {
+    border-radius: 17px;
+    background-color: #ffb732;
+}
+
 .meal-options {
     text-align: center;
     text-decoration: none;
@@ -169,10 +182,25 @@ height: 60vh;
     align-items: center;
 }
 
+.instructions-button {
+    width: 235px;
+    margin: 5px auto;
+    background-color: #ffb732;
+    border: none;
+;
+}
+
+.instructions-text {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    height: 285px;
+}
+
 /* wrapper */
 
 .wrapper {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -183,23 +211,21 @@ height: 60vh;
  
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    margin: 20px 10px;
+    justify-content: space-evenly;
+    margin: 20px auto;
+    border-radius: 17px;
+    background-color: #FFE57E;
 }
-
-/* BREAKFAST COLOR: #FFE57E */
-
-/* EVENING OLCOR: 717999 OR  I THIN THIS ONE BETTER(858A9F) */
 
 .recipe-card {
     border-radius: 17px;
-    width: 280px;
-    height: 280px;
+    width: 250px;
+    height: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow: hidden;
-    margin: 17px;
+    margin: 25px 10px;
    
 }
 
@@ -253,4 +279,198 @@ height: 60vh;
 
 .card-text {
  padding-bottom: 10px;
+}
+
+.mobile {
+    display: none;
+    margin-bottom: 20px;
+}
+
+.mobile-options {
+    display: none;
+}
+
+.mobile-login {
+ display: none;
+}
+
+@media (max-width: 1020px) {
+
+
+    body {
+        /* background-color: lightblue; */
+    }
+
+    .wrapper {
+        width: 90%;
+    }
+
+    .recipe-card {
+        width: 230px;
+        height: 230px;
+    }
+
+    .logo {
+        font-size: 3rem;
+    }
+
+    .featured-title {
+        font-size: 2.1rem;
+    }
+
+    .featured-ingredients {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 860px) {
+    body {
+        /* background-color: red; */
+    }
+
+    .nav-button {
+        padding: 10px;
+        height: 40px;
+        letter-spacing: 0;
+    }
+
+    .desktop {
+        display: none;
+    } 
+
+    .mobile {
+        display: flex;
+        align-items: center;
+    }
+
+    .search-button {
+        width: 100px;
+    }
+    .search-bar {
+        width: 100%;
+        margin: 0;
+    }
+
+    .mobile-options {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .featured-ingredients {
+        font-size: 1.1rem;
+    }
+
+    .recipe-card {
+        width: 210px;
+        height: 210px;
+    }
+
+    .card-overlay-title {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        /* background-color: green; */
+    }
+
+    header {
+        height: 100%;
+    }
+    .logo {
+        margin: 0 5px 0 0;
+        font-size: 2.1rem;
+    }
+
+    .nav-button {
+        padding: 10px;
+    }
+
+    .desktop-login {
+        display: none;
+    }
+
+    .mobile-login {
+        display: flex;
+        min-width: 50px;
+        justify-content: center;
+    }
+
+    .featured-background {
+        height: 100%;
+    }
+
+    .featured-container {
+        flex-direction: column;
+    }
+
+    .featured-image {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .featured-image img {
+        width: 70%;
+        margin: 0;
+    }
+
+    .instructions-container {
+        margin: 5px auto;
+        width: 100%;
+    }
+
+    .featured-title {
+        font-size: 1.7rem;
+    }
+
+    .instructions-text {
+        overflow: hidden;
+        height: 100%;
+    }
+
+    .featured-ingredients {
+        font-size: 1rem;
+    }
+
+    
+    .recipe-card {
+        width: 180px;
+        height: 180px;
+    }
+
+    .card-overlay-title {
+        top: 0;
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        /* background-color: blue; */
+        min-width: 320px;
+    }
+
+    .wrapper {
+        width: 100%;
+    }
+
+    .logo {
+        font-size: 1.7rem;
+    }
+    .nav-button {
+        padding: 10px;
+    }
+
+    .recipe-card {
+        width: 135px;
+        height: 135px;
+    }
+
+    .card-overlay-title {
+        font-size: 1rem;
+    }
 }
