@@ -466,10 +466,6 @@ main {
     }
 
     .recipe-card {
-        margin: 0;
-    }
-
-    .recipe-card {
         width: 145px;
         height: 145px;
     }
