@@ -1,7 +1,10 @@
 const recipeApp = {
 
-    // DELETE ME!! EDAMAM INFO: 5 CALLS/MIN DISHTYPE/CUISINE FILTER == NO 
-    // UP TO 100 RESULTS PER CALL
+    // Hey Marker! if you have time could you suggest any tips on my media queries? I have had a lot of trouble trying to get my landscape/portrait to show correctly. On firefox the device emulator seems perfect but on actual testing it is very different.
+
+
+    //This is a recipe app that gives random recipes based on time of day to a user who is just looking for ideas on something to eat right now
+
     // EDAMAM API variables
     appID: "e7cbe948",
     apiKey: "374fb0045e4134f0c63ea76e82994ac8",
@@ -121,12 +124,12 @@ recipeApp.updateBackground = function (bgc) {
 //this function gets the current time of day and updates the site on startup to appropiate meal time (breakfast, lunch or dinner)
 recipeApp.getMealTime = function () {
     const currentTime = new Date().getHours(); //gets the current time in hours (24 hour clock)
-    if(currentTime >= 1 && currentTime < 11) { //between hours of 1am and 11am show breakfast options
+    if (currentTime >= 1 && currentTime < 11) { //between hours of 1am and 11am show breakfast options
         recipeApp.getRecipes('breakfast');
         recipeApp.updateBackground('#FFE57E');
     } else if (currentTime >= 11 && currentTime < 17) { //between hours of 11am and 5pm show lunch options
         recipeApp.getRecipes('lunch');
-            recipeApp.updateBackground('#b5e7a0'); 
+        recipeApp.updateBackground('#b5e7a0');
     } else { //anytime after 5pm show dinner options
         recipeApp.getRecipes('dinner');
         recipeApp.updateBackground('#858A9F');

@@ -466,8 +466,8 @@ main {
     }
 
     .recipe-card {
-        width: 135px;
-        height: 135px;
+        width: 145px;
+        height: 145px;
     }
 
     .card-overlay-title {
@@ -493,4 +493,3 @@ main {
 
 }
 
-}
