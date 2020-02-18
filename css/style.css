@@ -465,10 +465,15 @@ main {
         padding: 7px;
     }
 
+    .recipes-container {
+        margin: 0;
+    }
+
     .recipe-card {
         width: 145px;
         height: 145px;
     }
+
 
     .card-overlay-title {
         font-size: 1rem;
@@ -504,6 +509,10 @@ main {
     .featured-image img {
         width: 100%;
         margin: 0 auto;
+    }
+
+    .recipes-container {
+        margin: 0;
     }
 
 }
