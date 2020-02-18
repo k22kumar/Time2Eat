@@ -486,6 +486,10 @@ main {
         height: 100%;
     }
 
+    .mobile-options {
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
 
     .instructions-container {
         width: 100%;
