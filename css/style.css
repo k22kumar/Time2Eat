@@ -466,6 +466,10 @@ main {
     }
 
     .recipe-card {
+        margin: 0;
+    }
+
+    .recipe-card {
         width: 145px;
         height: 145px;
     }
@@ -483,7 +487,7 @@ main {
     }
 
     .featured-background {
-        height: 100%;
+        height: 65vh;
     }
 
     .mobile-options {
