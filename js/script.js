@@ -1,16 +1,12 @@
 const recipeApp = {
-
-    // Hey Marker! if you have time could you suggest any tips on my media queries? I have had a lot of trouble trying to get my landscape/portrait to show correctly. On firefox the device emulator seems perfect but on actual testing it is very different.
-
-
     //This is a recipe app that gives random recipes based on time of day to a user who is just looking for ideas on something to eat right now
 
     // EDAMAM API variables
     appID: "e7cbe948",
     apiKey: "374fb0045e4134f0c63ea76e82994ac8",
     url: "https://api.edamam.com/search?",
-
-    $btn: $('button') //Jquery shorthand for  button
+    //Jquery shorthand for  button
+    $btn: $('button')
 };
 
 //recipeApp methods
@@ -45,6 +41,7 @@ recipeApp.chooseMealType = function () {
 //this function will get recipes from EDAMAM using their api and filter results based on query
 recipeApp.getRecipes = function (query) {
     let searchItem = query;
+    console.log(`I searched for : begin ${searchItem} end`);
     let endPoint = `${recipeApp.url}q=${searchItem}&app_id=${recipeApp.appID}&app_key=${recipeApp.apiKey}&from=0&to=100`;
     $.ajax(endPoint).then(function (recipes) {//recieves recipes from the query
         recipeApp.showRecipes(recipes);
@@ -55,7 +52,13 @@ recipeApp.searchRecipes = function () {
     $('form').on('submit', function (e) {
         e.preventDefault(); //stop pagerefresh
         recipeApp.updateBackground('#EBDEF0');
-        const selection = $('input').val();
+        let selection = "";
+        //this makes sure that each search works since there are TWO forms ONE for EACH platform
+        if ($('#desktop-search').is(":visible")) {
+            selection = $('#desktop-search').val();
+        } else {
+            selection = $('#mobile-search').val();
+        }
         recipeApp.getRecipes(selection);
     })
 }
